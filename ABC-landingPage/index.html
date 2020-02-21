@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="./favicon.ico">
+
+  <!-- main css file -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <title>ABC homepage</title>
+
+</head>
+<body>
+  <div class="app">
+    <div class="app__item">
+        <header>
+            <a href="#">
+                <img class="logo" src="img/ABC_logo.svg" alt="logo" />
+            </a>
+            <ul class="menu">
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Решения</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Отрасли</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Поддержка</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">О компании</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Контакты</a>
+                </li>
+            </ul>
+            <a href="#" class="number">
+                <img src="img/tel.svg" alt="phone">
+                <p>+7 (800) 765 43 21</p>
+            </a>
+            <button class="search"></button>
+            <div class="language">En</div>
+        </header>
+        <div class="description">
+            <video autoplay muted loop>
+                <source src="video/video.mp4">
+            </video>
+            <div class="description__about about">
+                <h2 class="about__title"><mark>Используйте лучшее,</mark> что может предложить платежная индустрия</h2>
+                <p class="about__article">ABC — надежный партнёр в сфере платежей и обработки карточных данных.</p>
+                <button class="about__begin">Начать работу</button>
+            </div>
+            <h1><mark>Super. Puper.</mark> Premium Technologies</h1>
+        </div>
+        <div class="modal" id="modal">
+            <form class="form">
+                <h3 class="form__title">Подключить услугу</h3>
+                <label class="form__label">Имя<input class="form__input" type="text"><span></span></label>
+                <label class="form__label">E-mail<input class="form__input" type="email"><span></span></label>
+                <label class="form__label">Телефон<input class="form__input" type="tel"><span></span></label>
+                <label class="form__label">Расскажите о своем проекте<input class="form__input" type="text"><span></span></label>
+                <p class="form__rules">Нажимая кнопку, вы соглашаетесь на обработку персональных данных, в
+                    соответствии с <a href="#">политикой конфиденциальности</a>.</p>
+                <button class="form__button">Подключить</button>
+            </form>
+        </div>
+        <div class="solutions">
+            <div class="solutions__wrapper">
+                <h2 class="title">Решения по отраслям</h2>
+                <ul class="filter" id="filter">
+                    <li class="filter__item sol-all filter__item_active">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Все
+                    </li>
+                    <li class="filter__item sol-bank">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Банки
+                    </li>
+                    <li class="filter__item sol-credit">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Кредитные организации
+                    </li>
+                    <li class="filter__item sol-retail">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Интернет-ритейл
+                    </li>
+                    <li class="filter__item sol-partnership">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Финтех-компании
+                    </li>
+                </ul>
+                <div class="solutions__container" id="solutions__container">
+                    <div class="solution solution_chosen sol-retail">
+                        <h4 class="solution__title">Решение номер 1</h4>
+                        <p class="solution__article">Принимайте платежи по банковским картам и с помощью альтернативных способов на сайте и в
+                            мобильном приложении под своим брендом. Умный скоринг и масса способов погашения повысят
+                            качество кредитного портфеля.</p>
+                        <button class="solution__button"></button>
+                    </div>
+                    <div class="solution solution_chosen sol-credit">
+                        <h4 class="solution__title">Самое прекрасное решение</h4>
+                        <p class="solution__article">Выдавайте кредиты на сайте или в мобильном приложении под собственным брендом. Умный скоринг
+                            и масса способов погашения повысят качество кредитного портфеля.</p>
+                        <button class="solution__button"></button>
+                    </div>
+                    <div class="solution solution_chosen sol-retail">
+                        <h4 class="solution__title">Решение 3</h4>
+                        <p class="solution__article">Контролируйте и управляйте всеми платежными системами и банками из одного окна. Повышайте
+                            эффективность работы с платежами: увеличивайте конверсию покупок и оптимизируйте расходы.</p>
+                        <button class="solution__button"></button>
+                    </div>
+                    <div class="solution solution_chosen sol-retail sol-partnership">
+                        <h4 class="solution__title">Решение к отпуску</h4>
+                        <p class="solution__article">Начните принимать разовые или регулярные платежи с европейских счетов клиентов через
+                            международную систему SEPA. Повышайте эффективность работы с платежами: увеличивайте
+                            конверсию покупок и оптимизируйте расходы.</p>
+                        <button class="solution__button"></button>
+                    </div>
+                    <div class="solution solution_chosen sol-bank sol-retail sol-partnership">
+                        <h4 class="solution__title">Решение 4</h4>
+                        <p class="solution__article">Принимайте платежи по банковским картам с помощью mPOS и POS терминалов в оффлайновых точках
+                            продаж и через службы доставки.</p>
+                        <button class="solution__button"></button>
+                    </div>
+                    <div class="solution solution_chosen sol-credit sol-retail sol-partnership">
+                        <h4 class="solution__title">Лучшее решение</h4>
+                        <p class="solution__article">Запустите свою систему расчётов с использованием электронных кошельков.</p>
+                        <button class="solution__button"></button>
+                    </div>
+                    <div class="solution solution_chosen sol-bank">
+                        <h4 class="solution__title">Решение 5</h4>
+                        <p class="solution__article">Запустите сервис денежных переводов под собственным брендом. Решение работает через сайт и
+                            мобильное приложение.способов на сайте и в мобильном приложении под своим брендом. Умный
+                            скоринг и масса способов погашения повысят качество кредитного портфеля.</p>
+                        <button class="solution__button"></button>
+                    </div>
+                    <div class="solution solution_chosen sol-bank sol-partnership">
+                        <h4 class="solution__title">Наше решение</h4>
+                        <p class="solution__article">Организуйте сервис моментальных безопасных денежных переводов наличными на карты любых
+                            банков мира.</p>
+                        <button class="solution__button"></button>
+                    </div>
+                    <div class="solution solution_chosen sol-bank sol-credit">
+                        <h4 class="solution__title">Решение 5</h4>
+                        <p class="solution__article">Организуйте сервис моментальных безопасных денежных переводов наличными.</p>
+                        <button class="solution__button"></button>
+                    </div>
+                    <div class="solution solution_chosen sol-retail">
+                        <h4 class="solution__title">Мобильное решение</h4>
+                        <p class="solution__article">Организуйте сервис моментальных безопасных денежных переводов наличными.</p>
+                        <button class="solution__button"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="advantages">
+            <h2 class="title">Технологическое преимущество и гибкость -<br> основа для роста бизнеса</h2>
+            <div class="advantages__container">
+                <div class="advantages__item">
+                    <div class="advantages__wrapper"><img class="advantages__start" src="img/advantages/Vector_quick-start.svg" width="129" height="129" alt="quick start" /></div>
+                    <h3><mark>Быстрый старт</mark> и кастомизация</h3>
+                    <p>Быстрый вывод решения на рынок под вашим собственным брендом.</p>
+                </div>
+                <div class="advantages__item">
+                    <div class="advantages__wrapper"><img src="img/advantages/Vector_integration.svg" width="119" height="119" alt="integration" /></div>
+                    <h3><mark>Готовые</mark> интеграции</h3>
+                    <p>В нашей системе доступно 300 интеграций с платежными системами, банками и CMS по всему миру.</p>
+                </div>
+                <div class="advantages__item">
+                    <div class="advantages__wrapper"><img src="img/advantages/Vector_technologies.svg" width="122" height="122" alt="technologies" /></div>
+                    <h3><mark>Актуальные</mark> технологии</h3>
+                    <p>Apple pay, Google pay, AFT, рекуррентные платежи, e-commerce, POS и mPOS, Master Card
+                        Money Send, Visa Direct и другие.</p>
+                </div>
+                <div class="advantages__item">
+                    <div class="advantages__wrapper"><img src="img/advantages/Vector_support.svg" width="123" height="123" alt="support" /></div>
+                    <h3><mark>Профессиональная</mark> поддержка</h3>
+                    <p>Профессиональная техподдержка и сопровождение клиента во время интеграции и после запуска.</p>
+                </div>
+            </div>
+        </div>
+        <div class="how-its-works">
+            <h2 class="title">Как это работает</h2>
+            <ol class="how-its-works__list">
+                <li class="how-its-works__step">Вы звоните заёмщику и договариваетесь о размере платежа по займу.</li>
+                <li class="how-its-works__step">Заёмщик переводит телефон в тоновый режим и вводит номер банковской карты.</li>
+                <li class="how-its-works__step">С карты списываются деньги в счет погашения кредиты.</li>
+                <li class="how-its-works__step">Чек по операции автоматически отправляется по электронной почте и по СМС.</li>
+            </ol>
+            <p>Сервис предоставляется в рамках <a href="#">онлайн-кредитования</a>.</p>
+        </div>
+        <footer>
+            <div class="about">
+                <h2 class="about__title"><mark>Свяжитесь с нами,</mark> чтобы запустить эффективное платежное решение</h2>
+                <p class="about__article">Более 1,5 тысяч клиентов уже доверили свои проекты ABC Abvgd.</p>
+                <button class="about__begin" id="btn">Начать работу</button>
+            </div>
+        </footer>
+    </div>
+    <!-- /.app__item -->
+  </div>
+  <!-- /.app -->
+  <script type="module" src="js/index.js"></script>
+</body>
+</html>

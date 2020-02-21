@@ -1,0 +1,32 @@
+{
+  "name": "gulp4-starter",
+  "version": "1.0.0",
+  "description": "Starter template with gulp4 scss browser-sync normalize, autoprefixer",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gulp4",
+    "scss",
+    "browser-sync",
+    "normalize",
+    "template"
+  ],
+  "author": "Nikolay Salinder",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.26.5",
+    "gulp": "^4.0.1",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "IE 10"
+  ]
+}
